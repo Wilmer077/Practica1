@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="{{ url_for('static', filename='images/nuevologo.png') }}" alt="Logo" class="logo">
+            <h1>TENTACION CAFE</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quienes_somos">Quiénes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>NUESTRO CAFE</h2>
+        <img width="800"  src="{{ url_for('static', filename='images/cafe.jpg') }}" alt="Café delicioso">
+        <p>Servimos el mejor café desde 1950. ¡Ven y prueba nuestras especialidades!</p>
+    </section>
+
+    <section>
+        <h2>Testimonios</h2>
+        <p>Testimonio 1: ¡Gran servicio la atencion fue muy rapida!</p>
+        <p>Testimonio 2: ¡Muy recomendable para venir con amigos y familia!</p>
+    </section>
+
+    <section>
+        <h2>Ventajas</h2>
+        <p>¡Hacer un pedido con un solo click!</p>
+        <p> Atencion Rapida</p>
+        <p> Productos de Alta calidad</p>
+        <p> Precios economicos</p>
+    </section>
+
+    <footer>
+        <a href="#">Redes Sociales</a><BR></BR>
+        <button type="button"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">FACEBOOK</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/watsap.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">WHATSAPP</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/insta.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">INSTAGRAM</button>
+    </footer>
+
+  
+</body>
+</html>

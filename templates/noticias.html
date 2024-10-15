@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="{{ url_for('static', filename='images/nuevologo.png') }}" alt="Logo" class="logo">
+            <h1>TENTACION CAFE</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quienes_somos">Quiénes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Últimas Noticias</h2>
+        <article>
+            <h3>Nueva Sucursal Abierta</h3>
+            <img src="{{ url_for('static', filename='images/sucursal.jpg') }}" alt="Nueva Sucursal">
+            <p>Hemos abierto una nueva sucursal en el centro de la ciudad. ¡Visítanos para disfrutar de tus bebidas favoritas!</p>
+        </article>
+
+        <article>
+            <h3>Premio a la Mejor Cafetería 2024</h3>
+            <img src="{{ url_for('static', filename='images/Premio.jpg') }}" alt="Premio Cafetería" width="600">
+            <p>Nos enorgullece anunciar que hemos sido galardonados como la Mejor Cafetería del año por la Asociación Nacional de Cafeterías.</p>
+        </article>
+
+        <article>
+            <h3>Promoción Especial de Otoño</h3>
+            <img src="{{ url_for('static', filename='images/promo.jpg') }}" alt="Promoción Otoño" width="400">
+            <p>Durante el mes de octubre, junta 5 etiquetas de sobres y canjea por una caja de Tentacion Cafe.</p>
+        </article>
+    </section>
+
+    <footer>
+        <a href="#">Redes Sociales</a><BR></BR>
+        <button type="button"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">FACEBOOK</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/watsap.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">WHATSAPP</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/insta.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">INSTAGRAM</button>
+    </footer>
+</body>
+</html>

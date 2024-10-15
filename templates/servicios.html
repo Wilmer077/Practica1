@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="{{ url_for('static', filename='images/nuevologo.png') }}" alt="Logo" class="logo">
+            <h1>TENTACION CAFE</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quienes_somos">Quiénes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <div class="service">
+            <img src="{{ url_for('static', filename='images/servicio1.jpg') }}" alt="Servicio 1">
+            <h3>Servicio de Café Personalizado</h3>
+            <p>Ofrecemos café personalizado según los gustos y preferencias de cada cliente. Disfruta de una experiencia única.</p>
+        </div>
+
+        <div class="service">
+            <img src="{{ url_for('static', filename='images/servicio2.jpg') }}" alt="Servicio 2" width="400">
+            <h3>Ventas al por mayor</h3>
+            <p>Proveemos café en grandes cantidades para empresas, cafeterías y eventos especiales. Calidad garantizada.</p>
+        </div>
+
+        <div class="service">
+            <img src="{{ url_for('static', filename='images/SER.jpg') }}" alt="Servicio 3" width="600">
+            <h3>Consultoría de Cafeterías</h3>
+            <p>Ofrecemos consultoría para el montaje y la operación de nuevas cafeterías. Te ayudamos a iniciar tu propio negocio.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#">Redes Sociales</a><BR></BR>
+        <button type="button"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">FACEBOOK</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/watsap.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">WHATSAPP</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/insta.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">INSTAGRAM</button>
+    </footer>
+</body>
+</html>

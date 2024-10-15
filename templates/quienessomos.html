@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="{{ url_for('static', filename='images/nuevologo.png') }}" alt="Logo" class="logo">
+            <h1>TENTACION CAFE</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quienes_somos">Quiénes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Nuestra Historia</h2>
+        <p>Somos una empresa dedicada a ofrecer los mejores productos de café desde 1950. Nuestro objetivo es brindar calidad y satisfacción a nuestros clientes.</p>
+    </section>
+
+    <section>
+        <h2>Misión y Visión</h2>
+        <p><strong>Misión:</strong> Brindar productos de la más alta calidad y satisfacer a nuestros clientes con cada taza de café.</p>
+        <p><strong>Visión:</strong> Ser líderes en el mercado de café a nivel global, manteniendo la calidad y la innovación como pilares.</p>
+    </section>
+
+    <section>
+        <h2>Nuestro Equipo</h2>
+        <p>Contamos con un equipo dedicado y apasionado por el café. Desde nuestros baristas hasta el equipo de producción, todos trabajan para garantizar que cada taza de café sea perfecta.</p>
+        <img src="{{ url_for('static', filename='images/trabajo.png') }}" alt="" width="600">
+        <img src="{{ url_for('static', filename='images/trabajo2.jpg') }}" alt="" width="600" height="400">
+        <img src="{{ url_for('static', filename='images/trabajo3.jpg') }}" alt="" width="600">
+        <img src="{{ url_for('static', filename='images/tazas.jpg') }}" alt="" width="600">
+    </section>
+
+    <footer>
+        <a href="#">Redes Sociales</a><BR></BR>
+        <button type="button"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">FACEBOOK</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/watsap.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">WHATSAPP</button>
+        <button type="button"><img src="{{ url_for('static', filename='images/insta.png') }}" alt="icono" style="width: 20px; height: 20px; vertical-align:middle;">INSTAGRAM</button>
+    </footer>
+</body>
+</html>
